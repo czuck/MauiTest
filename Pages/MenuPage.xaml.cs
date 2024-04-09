@@ -24,6 +24,9 @@ public partial class MenuPage : ContentPage
             case "TitleIssue":
                 nextPage = new TitleIssuePage();
                 break;
+            case "GridTap":
+                nextPage = new GridTapPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;
@@ -31,5 +34,6 @@ public partial class MenuPage : ContentPage
 
         var flyoutPage = (FlyoutPage)Parent;
         flyoutPage.Detail = new NavigationPage(nextPage);
+        flyoutPage.IsPresented = false;
     }
 }

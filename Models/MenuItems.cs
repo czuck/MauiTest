@@ -47,14 +47,20 @@ namespace CleanApp.Models
                 new
                     MenuItem
                     {
-                        DisplayName = "Title Disappearing Issue",
+                        DisplayName = "Title Disappearing Issue #21645",
                         PageName = "TitleIssue"
                     },
                 new
                     MenuItem
                     {
-                        DisplayName = "Announcement Page",
+                        DisplayName = "Announcement Page #21646",
                         PageName = "Announcement"
+                    },
+                new
+                    MenuItem
+                    {
+                        DisplayName = "Grid Tap Gesture #21740",
+                        PageName = "GridTap"
                     },
             };
             return source;
