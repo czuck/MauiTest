@@ -106,7 +106,9 @@ namespace CleanApp
                     Title = "Closed on Monday",
                     Author = "Amanda Jones",
                     StartDate = new DateTime(2024, 2, 26),
-                    Details = "All offices will be closed next Monday, sorry for any inconvenience"
+                    Details = "All offices will be closed next Monday, sorry for any inconvenience",
+                    ShowCount = true,
+                    Count = 2
                 },
                 new()
                 {
@@ -114,7 +116,9 @@ namespace CleanApp
                     Title = "Movies in the Park",
                     Author = "Sam Walters",
                     StartDate = new DateTime(2024, 2, 24),
-                    Details = "This coming Friday we will be showing 'Back to the future' at the park.  Bring your chairs or blankets and something to drink, popcorn will be provided."
+                    Details = "This coming Friday we will be showing 'Back to the future' at the park.  Bring your chairs or blankets and something to drink, popcorn will be provided.",
+                    ShowCount = false,
+                    Count = 0
                 },
                 new()
                 {
@@ -122,7 +126,9 @@ namespace CleanApp
                     Title = "Pickleball Tournament",
                     Author = "Robert Allen",
                     StartDate = new DateTime(2024, 2, 14),
-                    Details = "The next pickleball tournament will start saturday morning at 9am.  Please arrive about 15 min early if you wish to register."
+                    Details = "The next pickleball tournament will start saturday morning at 9am.  Please arrive about 15 min early if you wish to register.",
+                    ShowCount = true,
+                    Count = 5
                 }
             };
             return list;

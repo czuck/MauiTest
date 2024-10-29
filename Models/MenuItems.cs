@@ -62,6 +62,12 @@ namespace CleanApp.Models
                         DisplayName = "Grid Tap Gesture #21740",
                         PageName = "GridTap"
                     },
+                new
+                    MenuItem
+                    {
+                        DisplayName = "Display Prompt Async",
+                        PageName = "DisplayPrompt"
+                    },
             };
             return source;
         }

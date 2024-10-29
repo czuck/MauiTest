@@ -2,6 +2,7 @@
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:CleanApp.Models"
+             xmlns:views="clr-namespace:CleanApp.Views"
              x:Class="CleanApp.AnnouncementView">
     <ContentView.BindingContext>
         <models:Announcement />
@@ -69,22 +70,36 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.View>
-                                <StackLayout Padding="10"
-                                             Orientation="Horizontal"
-                                             HorizontalOptions="Fill">
-                                    <StackLayout Orientation="Vertical"
-                                                 HorizontalOptions="Fill"
-                                                 Spacing="0">
+                                <Grid Padding="10"
+                                      RowDefinitions="*,*"
+                                      ColumnDefinitions=" *, 20, 20, 20">
                                         <Label Text="{Binding Title}"
+                                               Grid.Row="0"
+                                               Grid.Column="0"
                                                TextColor="Black"
                                                FontSize="16"/>
                                         <Label Text="{Binding Author}"
+                                               Grid.Row="1"
+                                               Grid.Column="0"
                                                    TextColor="Gray" />
-                                    </StackLayout >
+                                        <views:CountBubble
+                                            Grid.Row="0"
+                                            Grid.RowSpan="2"
+                                            Grid.Column="1"
+                                            Count ="{Binding Count}"
+                                            IsVisible="{Binding ShowCount}" />
+                                    <views:CountBubble  x:Name="CountBubble"
+                                                        Grid.Row="0"
+                                                        Grid.RowSpan="2"
+                                                        Grid.Column="2" 
+                                                        Count ="{Binding Count}" />
                                     <Image Source="carat_r.png"
-                                                    HorizontalOptions="End"
+                                           Grid.Row="0"
+                                           Grid.RowSpan="2"
+                                           Grid.Column="3"
+                                           VerticalOptions="Center"
                                                     WidthRequest="16" />
-                                </StackLayout>
+                                </Grid>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>

@@ -27,6 +27,9 @@ public partial class MenuPage : ContentPage
             case "GridTap":
                 nextPage = new GridTapPage();
                 break;
+            case "DisplayPrompt":
+                nextPage = new DisplayPromptPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;
