@@ -65,7 +65,7 @@ namespace CleanApp.Models
                 new
                     MenuItem
                     {
-                        DisplayName = "Display Prompt Async",
+                        DisplayName = "Display Prompt Async #25585",
                         PageName = "DisplayPrompt"
                     },
             };
