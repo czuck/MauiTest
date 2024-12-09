@@ -18,7 +18,7 @@ public partial class MenuPage : ContentPage
         Page nextPage;
         switch (((MenuItem)e.SelectedItem).PageName)
         {
-            case "Announcements":
+            case "Announcement":
                 nextPage = new AnnouncementPage();
                 break;
             case "TitleIssue":

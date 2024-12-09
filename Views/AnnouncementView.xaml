@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:CleanApp.Models"
              xmlns:views="clr-namespace:CleanApp.Views"
-             x:Class="CleanApp.AnnouncementView">
+             x:Class="CleanApp.Views.AnnouncementView">
     <ContentView.BindingContext>
         <models:Announcement />
     </ContentView.BindingContext>

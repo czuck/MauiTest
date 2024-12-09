@@ -1,7 +1,7 @@
 ﻿using CleanApp.Models;
 using CleanApp.Pages;
 
-namespace CleanApp
+namespace CleanApp.Views
 {
     public partial class AnnouncementView : ContentView
     {
@@ -65,7 +65,7 @@ namespace CleanApp
             }
         }
 
-        public async void DisplayMessage(Announcement announcement)
+        public void DisplayMessage(Announcement announcement)
         {
             NoAnnLayout.IsVisible = false;
             OneAnnLayout.IsVisible = true;

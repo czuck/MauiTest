@@ -1,4 +1,5 @@
 ﻿using CleanApp.Models;
+using CleanApp.Views;
 
 namespace CleanApp.Pages
 {
