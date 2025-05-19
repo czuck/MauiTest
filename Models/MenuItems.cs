@@ -13,67 +13,59 @@ namespace CleanApp.Models
 
     public class MenuItemsViewModel : INotifyPropertyChanged
     {
-        private readonly IEnumerable<MenuItem> source;
-        private MenuItem selectedMenuItem;
+        private MenuItem _selectedMenuItem;
 
         public ObservableCollection<MenuItem> MenuItems { get; private set; }
 
         public MenuItem SelectedMenuItem
         {
-            get => selectedMenuItem;
-            set => selectedMenuItem = value;
+            get => _selectedMenuItem;
+            set => _selectedMenuItem = value;
         }
 
         public MenuItemsViewModel()
         {
-
-            source = GetMenuItems().ToList();
+            IEnumerable<MenuItem> source = GetMenuItems().ToList();
             MenuItems = new ObservableCollection<MenuItem>(source);
             SelectedMenuItem = source.First();
             OnPropertyChanged(nameof(SelectedMenuItem));
 
         }
 
-        public IEnumerable<MenuItem> GetMenuItems()
+        private IEnumerable<MenuItem> GetMenuItems()
         {
-            var source = new List<MenuItem>
+            var menuItems = new List<MenuItem>
             {
-                new
-                    MenuItem
-                    {
+                new() {
                         DisplayName = "Main Page",
                         PageName = "Main"
                     },
-                new
-                    MenuItem
-                    {
+                new() {
                         DisplayName = "Title Disappearing Issue #21645",
                         PageName = "TitleIssue"
                     },
-                new
-                    MenuItem
-                    {
+                new() {
                         DisplayName = "Announcement Page #21646",
                         PageName = "Announcement"
                     },
-                new
-                    MenuItem
-                    {
+                new() {
                         DisplayName = "Grid Tap Gesture #21740",
                         PageName = "GridTap"
                     },
-                new
-                    MenuItem
-                    {
+                new() {
                         DisplayName = "Display Prompt Async #25585",
                         PageName = "DisplayPrompt"
                     },
+                new() {
+                        DisplayName = "WebView Cancel #",
+                        PageName = "WebView"
+                    },
             };
-            return source;
+            return menuItems;
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
-        void OnPropertyChanged([CallerMemberName] string propertyName = null)
+        public void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }

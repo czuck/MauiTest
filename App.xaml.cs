@@ -7,8 +7,16 @@ namespace CleanApp
         public App()
         {
             InitializeComponent();
+        }
+        protected override Window CreateWindow(IActivationState? activationState)
+        {
+            return new Window(new Startup());
+            //return new Window(new MainFlyoutPage());
+        }
 
-            MainPage = new MainFlyoutPage();
+        public void ShowMainPage()
+        {
+            Windows[0].Page = new MainFlyoutPage();
         }
     }
 }

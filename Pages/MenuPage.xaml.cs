@@ -30,6 +30,9 @@ public partial class MenuPage : ContentPage
             case "DisplayPrompt":
                 nextPage = new DisplayPromptPage();
                 break;
+            case "WebView":
+                nextPage = new WebViewPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;

@@ -2,10 +2,10 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <IsFirstTimeProjectOpen>False</IsFirstTimeProjectOpen>
-    <ActiveDebugFramework>net9.0-android35.0</ActiveDebugFramework>
-    <ActiveDebugProfile>Google Pixel 7 Pro (Android 14.0 - API 34)</ActiveDebugProfile>
-    <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
-    <DefaultDevice>iPhone 15 iOS 17.4</DefaultDevice>
+    <ActiveDebugFramework>net9.0-ios</ActiveDebugFramework>
+    <ActiveDebugProfile>Christy’s work iPhone</ActiveDebugProfile>
+    <SelectedPlatformGroup>RemoteDevice</SelectedPlatformGroup>
+    <DefaultDevice>iPhone 16 iOS 18.1</DefaultDevice>
     <TargetiOSDevice>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
 &lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
 &lt;plist version="1.0"&gt;
@@ -17,7 +17,7 @@
 		&lt;key&gt;model&lt;/key&gt;
 		&lt;string&gt;iPhone12,1&lt;/string&gt;
 		&lt;key&gt;os-version&lt;/key&gt;
-		&lt;string&gt;17.6.1&lt;/string&gt;
+		&lt;string&gt;18.3.1&lt;/string&gt;
 		&lt;key&gt;os&lt;/key&gt;
 		&lt;string&gt;iOS&lt;/string&gt;
 	&lt;/dict&gt;
@@ -36,7 +36,13 @@
     <MauiXaml Update="Pages\AnnouncementPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\Startup.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\TitleIssuePage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Pages\WebViewPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\AnnouncementView.xaml">

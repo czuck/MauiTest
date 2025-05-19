@@ -55,6 +55,10 @@
 	  <ProvisioningType>manual</ProvisioningType>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(TargetFramework)'=='net9.0-ios'">
+	  <ProvisioningType>manual</ProvisioningType>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -77,7 +81,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.12" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.3" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.12" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.0" />
 		<PackageReference Include="Microsoft.Maui.Core" Version="9.0.12" />
