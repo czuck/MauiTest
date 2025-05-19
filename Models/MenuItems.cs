@@ -57,7 +57,7 @@ namespace CleanApp.Models
                         PageName = "DisplayPrompt"
                     },
                 new() {
-                        DisplayName = "WebView Cancel #",
+                        DisplayName = "WebView Cancel #29575",
                         PageName = "WebView"
                     },
             };
