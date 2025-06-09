@@ -60,6 +60,10 @@ namespace CleanApp.Models
                         DisplayName = "WebView Cancel #29575",
                         PageName = "WebView"
                     },
+                new() {
+                    DisplayName = "Map Tap",
+                    PageName = "MapTap"
+                },
             };
             return menuItems;
         }

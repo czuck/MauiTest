@@ -33,6 +33,9 @@ public partial class MenuPage : ContentPage
             case "WebView":
                 nextPage = new WebViewPage();
                 break;
+            case "MapTap":
+                nextPage = new MapTapPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;

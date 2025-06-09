@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CleanApp.Pages.MapTapPage"
+             Title="MapTapPage">
+    <ContentPage.Content>
+        <Button x:Name="LoadMap"
+                Text="Tap to load map page"
+                Pressed="LoadMap_OnPressed">
+        </Button>
+    </ContentPage.Content>
+</ContentPage>
