@@ -10,7 +10,7 @@
             <Button x:Name="BackButton"
                     Text="Back"
                     Pressed="BackButton_OnPressed"></Button>
-            <maps:Map
+            <maps:Map x:Name="MyMap"
             Grid.Row="1"/>
         </Grid>
     </ContentPage.Content></ContentPage>

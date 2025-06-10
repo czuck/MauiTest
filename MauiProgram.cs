@@ -18,9 +18,14 @@ namespace CleanApp
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 })
                 .UseMauiMaps();
-
+#if IOS
+                builder.ConfigureMauiHandlers((handlers) =>
+                {
+                    handlers.AddHandler<Microsoft.Maui.Controls.Maps.Map, CleanApp.Platforms.iOS.Handlers.CustomMapHandler>();
+                });
+#endif
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
