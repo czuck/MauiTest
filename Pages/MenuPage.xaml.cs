@@ -36,6 +36,9 @@ public partial class MenuPage : ContentPage
             case "MapTap":
                 nextPage = new MapTapPage();
                 break;
+            case "Carousel":
+                nextPage = new CarouselPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;
