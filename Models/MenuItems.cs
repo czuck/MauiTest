@@ -65,7 +65,7 @@ namespace CleanApp.Models
                     PageName = "MapTap"
                 },
                 new() {
-                    DisplayName = "Carousel",
+                    DisplayName = "Carousel #29913",
                     PageName = "Carousel"
                 },
             };
