@@ -69,7 +69,7 @@ namespace CleanApp.Models
                     PageName = "Carousel"
                 },
                 new() {
-                    DisplayName = "Image Aspect in Grid",
+                    DisplayName = "Image Aspect in Grid #31740",
                     PageName = "ImageAspect"
                 },
             };
