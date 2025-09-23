@@ -39,6 +39,9 @@ public partial class MenuPage : ContentPage
             case "Carousel":
                 nextPage = new CarouselPage();
                 break;
+            case "ImageAspect":
+                nextPage = new ImageAspect();
+                break;
             default:
                 nextPage = new MainPage();
                 break;

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CleanApp.Pages.ImageAspect"
+             Title="Image Aspect"
+             BindingContext="{Binding Source={RelativeSource Self}}">
+    <Grid
+        RowDefinitions="Auto, Auto, Auto, Auto, *">
+        <Label 
+            Grid.Row="0"
+            Text="Above the Images"></Label>
+    <Image x:Name="BannerImage1"
+               Grid.Row="1"
+               Aspect="AspectFit" ></Image>
+        <Image x:Name="BannerImage2"
+               Grid.Row="2"
+               Aspect="AspectFit" ></Image>
+        <Label 
+            Grid.Row="3"
+            Text="Below the Images"></Label>
+    </Grid>
+</ContentPage>
