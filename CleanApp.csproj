@@ -81,9 +81,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.110" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.9" />
-		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="9.0.110" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="9.0.111" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.10" />
+		<PackageReference Include="Microsoft.Maui.Controls.Maps" Version="9.0.111" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -109,6 +109,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\TitleIssuePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\WebviewGridPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\AnnouncementView.xaml">

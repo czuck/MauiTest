@@ -42,6 +42,9 @@ public partial class MenuPage : ContentPage
             case "ImageAspect":
                 nextPage = new ImageAspect();
                 break;
+            case "WebViewGrid":
+                nextPage = new WebviewGridPage();
+                break;
             default:
                 nextPage = new MainPage();
                 break;

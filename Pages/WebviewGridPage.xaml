@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CleanApp.Pages.WebviewGridPage"
+             Title="WebviewGridPage">
+    <Grid
+        RowDefinitions="50,*,50">
+        <Label 
+            Grid.Row="0" 
+            HorizontalTextAlignment="Center"
+            Text="above webview"></Label>
+        <WebView x:Name="Webview"
+                 BackgroundColor="BurlyWood"
+                 Grid.Row="1"></WebView>
+        <Label 
+            Grid.Row="2" 
+            HorizontalTextAlignment="Center"
+            Text="below webview"></Label>
+    </Grid>
+</ContentPage>

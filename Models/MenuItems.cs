@@ -40,10 +40,11 @@ namespace CleanApp.Models
                         DisplayName = "Main Page",
                         PageName = "Main"
                     },
-                new() {
-                        DisplayName = "Title Disappearing Issue #21645",
-                        PageName = "TitleIssue"
-                    },
+                //THis issue has been solved and verified
+                //new() {
+                //        DisplayName = "Title Disappearing Issue #21645",
+                //        PageName = "TitleIssue"
+                //    },
                 new() {
                         DisplayName = "Announcement Page #21646",
                         PageName = "Announcement"
@@ -71,6 +72,10 @@ namespace CleanApp.Models
                 new() {
                     DisplayName = "Image Aspect in Grid #31740",
                     PageName = "ImageAspect"
+                },
+                new() {
+                    DisplayName = "WebView in Grid #32030",
+                    PageName = "WebViewGrid"
                 },
             };
             return menuItems;
